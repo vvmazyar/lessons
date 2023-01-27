@@ -1,0 +1,50 @@
+@import url(reset.css);
+header {
+    color: red;
+}
+mark {
+    color: palevioletred;
+}
+.red-mark {
+    color: darkred;
+}
+.main-definition {
+    color: orangered;
+}
+.navigation {
+    color: darkblue;
+}
+.text {
+    color: orange;
+}
+.text-2 {
+    color: yellow;
+}
+.text-3 {
+    color: sandybrown;
+}
+.text-4 {
+    color: aqua;
+}
+.list {
+    color: yellowgreen;
+}
+.navigation.list {
+    color: powderblue;
+}
+.history.title,
+.ukraine.title {
+    color: darkred;
+}
+.purpose.title {
+    color: blue;
+}
+.literature {
+    color: purple;
+}
+.footer-info {
+    color: palevioletred;
+}
+#p-4 {
+    color: green;
+}
