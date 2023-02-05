@@ -1,0 +1,40 @@
+@import url(reset.css);
+body {
+    font-family: Poppins, sans-serif;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.image {
+    max-width: 1240px;
+    margin: 0 auto 80px;
+}
+.content {
+    max-width: 816px;
+    margin: 0 auto 80px;
+}
+h2 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+    color: #212529;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    color: #6C757D;
+}
+.footer-text {
+    margin-bottom: 80px;
+}
+p {
+    margin-bottom: 30px;
+}
+.image-2 {
+    margin-right: 15px;
+}
+.content.footer {
+    padding-bottom: 10px;
+}
