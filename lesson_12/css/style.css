@@ -1,0 +1,313 @@
+@import url(reset.css);
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #fff;
+}
+[class*="__container"] {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.content-header__title {
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 32px;
+}
+.content-main__title {
+    color:  rgb(39, 37, 37);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.content-main__items {
+    padding-left: 30px;
+    padding-bottom: 30px;
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    perspective: 200px;
+    transform-style: preserve-3d;
+}
+.content-main__items div:not(:last-child) {
+    margin-bottom: 20px;
+}
+.item-1 {
+    background-color: red;
+}
+.content-main__items div {
+    display: flex;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	transition: all 0.8s ease 0s;
+	width: 150px;
+	height: 150px;
+    font-size: 18px;
+}
+.item-1:hover {
+    color:  red;
+    background-color: white;
+    border: 2px dotted red;
+    transform: translate(50px,-10px);
+    transition: all 0.8s ease 0s;
+}
+.item-2 {
+    background-color: orangered;
+}
+.item-2:hover {
+    color:  orangered;
+    background-color: white;
+    border: 2px dotted orangered;
+    transform: scale(0.8);
+    transition: all 0.8s ease 0s;
+}
+.item-3 {
+    background-color: green;
+}
+.item-3:hover {
+    color:  green;
+    background-color: white;
+    border: 2px dotted green;
+    transform: rotateY(-360deg);
+    transition: all 0.8s ease 0s;
+}
+.item-4 {
+    background-color: yellowgreen;
+}
+.item-4:hover {
+    color:  yellowgreen;
+    background-color: white;
+    border: 2px dotted yellowgreen;
+    transform: skewX(-20deg);
+    transition: all 0.8s ease 0s;
+}
+.item-5 {
+    background-color: darkcyan;
+}
+.item-5:hover {
+    color:  darkcyan;
+    background-color: white;
+    border: 2px dotted darkcyan;
+    transform: translateX(50px) scale(1.2) skew(20deg);
+    transition: all 0.8s ease 0s;
+}
+.item-6 {
+    background-color: blueviolet;
+}
+.item-6:hover {
+    color:  blueviolet;
+    background-color: white;
+    border: 2px dotted blueviolet;
+    transform: translateX(10px) scale(0.8) rotate(-10deg);
+    transition: all 0.8s ease 0s;
+}
+.item-7 {
+    background-color: palevioletred;
+}
+.item-7:hover {
+    color:  palevioletred;
+    background-color: white;
+    border: 2px dotted palevioletred;
+    transform-origin: right;
+    transform: rotate(-90deg);
+    transition: all 0.8s ease 0s; 
+}
+.item-8 {
+    background-color: darkseagreen;
+}
+.item-8:hover {
+    color:  darkseagreen;
+    background-color: white;
+    border: 2px dotted darkseagreen;
+    transform: rotate3d(2, -1, 1, 10deg);
+    transition: all 0.8s ease 0s; 
+}
+.item-9 {
+    background-color: palevioletred;
+}
+.item-9:hover {
+    color:  palevioletred;
+    background-color: white;
+    border: 2px dotted palevioletred;
+    transform: translate3d(20px, -10px, 40px);
+    transition: all 0.8s ease 0s;
+}
+.item-10 {
+    background-color: blueviolet;
+}
+.item-10:hover {
+    color:  blueviolet;
+    background-color: white;
+    border: 2px dotted blueviolet;
+    transform: scale3d(1.2, 1.2, 0.8);
+    transition: all 0.8s ease 0s; 
+}
+.item-11 {
+    background-color: darkcyan;
+}
+.item-11:hover {
+    color:  darkcyan;
+    background-color: white;
+    border: 2px dotted darkcyan;
+    transform: rotate3d(2, -1, 1, 15deg);
+    transition: all 0.8s ease 0s; 
+}
+.item-12 {
+    background-color: yellowgreen;
+}
+.item-12:hover {
+    color:  yellowgreen;
+    background-color: white;
+    border: 2px dotted yellowgreen;
+    transform: translate3d(20px, 0px,-10px) scale3d(1, 0.8, 1.2) rotate3d(0, 1, 1, 360deg);
+    transition: all 0.8s ease 0s;  
+}
+.item-13 {
+    background-color: green;
+}
+.item-13:hover {
+    color:  green;
+    background-color: white;
+    border: 2px dotted green;
+    transform: translate3d(30px, 30px, 30px) rotate3d(1, 1, 1, 30deg);
+    transition: all 0.8s ease 0s;
+}
+.item-14 {
+    background-color: orangered;
+}
+.item-14:hover {
+    color:  orangered;
+    background-color: white;
+    border: 2px dotted orangered;
+    transform: rotateY(-10deg);
+    transition: all 0.8s ease 0s; 
+}
+.item-15 {
+    position: relative;
+    background-color: red;
+}
+.item-15:hover {
+    transform: rotateY(-180deg);
+    backface-visibility: visible;
+    transition: all 0.8s ease 0s;
+}
+.footer {
+    background: linear-gradient(48deg, rgba(0,203,245,0.8128501400560224) 36%, rgba(5,27,255,0.8044467787114846) 100%);
+}
+.footer__content {
+    padding-top: 200px;
+    padding-bottom: 400px;
+}
+.flower__central-part {
+    max-width: 100px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(247,0,0,1) 0%, rgba(251,160,0,0.9809173669467787) 50%, rgba(255,252,0,1) 100%);
+    border-radius: 50%;
+}
+.flower__petals li{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.petal-rotate {
+    border: 3px dotted white;
+}
+.petal-rotate:hover {
+    transform: rotate(660deg);
+    transition: all 0.8s ease 0s;
+}
+.petal-1 {
+    background: linear-gradient(148deg, rgba(245,0,223,1) 0%, rgba(255,5,5,1) 100%);
+    top: 0;
+    left: -100px;
+}
+.petal-2 {
+    background: linear-gradient(148deg, rgba(245,0,223,1) 0%, rgba(255,5,5,1) 100%);
+    top: 0;
+    left: 100px;
+}
+.petal-3 {
+    background: linear-gradient(148deg, rgba(245,0,223,1) 0%, rgba(255,5,5,1) 100%);
+    top: -100px;
+    left: 0px;
+}
+.petal-4 {
+    background: linear-gradient(148deg, rgba(245,0,223,1) 0%, rgba(255,5,5,1) 100%);
+    top: 100px;
+    left: 0px;
+}
+.petal-5 {
+    
+    background: linear-gradient(308deg, rgba(245,0,223,1) 0%, rgba(255,5,5,1) 100%);
+    transform: translate(64%, 76%)
+}
+.petal-6 {
+    background: linear-gradient(308deg, rgba(245,0,223,1) 0%, rgba(255,5,5,1) 100%);
+    transform: translate(-64%, 76%)
+}
+.petal-7 {
+    background: linear-gradient(308deg, rgba(245,0,223,1) 0%, rgba(255,5,5,1) 100%);
+    transform: translate(64%, -76%)
+}
+.petal-8 {
+    background: linear-gradient(308deg, rgba(245,0,223,1) 0%, rgba(255,5,5,1) 100%);
+    transform: translate(-64%, -76%)
+}
+.flower__stem {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    background-color: chartreuse;
+    height: 200px;
+    width: 20px;
+}
+.flower__stem:hover {
+    background-color: green;
+}
+.flower__stem:hover .leaf-1 {
+    border: 4px dashed darkgreen;
+    background: linear-gradient(48deg, rgba(1,245,0,1) 0%, rgba(5,255,168,1) 100%);
+}
+.flower__stem:hover .leaf-2 {
+    border: 4px dashed darkgreen;
+    background: linear-gradient(186deg, rgba(1,245,0,1) 0%, rgba(5,255,168,1) 100%);
+}
+.flower__leaves li{
+    width: 120px;
+    height: 100px;
+    border-radius: 90px 0 90px 0;
+}
+.leaf-1 {
+    background-color: green;
+    transform: translate(20px, 10px);
+    position: relative;
+    top: 30px;
+}
+.leaf-2 {
+    background-color: rgb(100, 193, 100);
+    position: relative;
+    left: -120px;
+    top: -10px;
+    transform: rotateX(180deg);
+}
