@@ -1,0 +1,382 @@
+@import url(reset.css);
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+body {
+    font-family: Poppins, sans-serif;
+}
+[class*="__container"] {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.content-header__title {
+    color: rgb(51, 0, 255);
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.content-main__title {
+    color:  rgb(39, 37, 37);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.content-main__items div:not(:last-child) {
+    margin-bottom: 20px;
+}
+a:not(:last-child) {
+    margin-bottom: 20px;
+}
+.item-1 {
+    width: 150px;
+    height: 150px;
+    background-color: chartreuse;
+    transition-duration: 1000ms;
+    transition-property: all;
+    transition-delay: 0.2s;
+    transition-timing-function: cubic-bezier(0.8, 0.84, 0.44, 1);
+}
+.item-1:hover {
+    background-color: aqua;
+}
+.item-2 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 0, 183);
+    transition: all 500ms ease 500ms;
+}
+.item-2:hover {
+    transform: scale(0.8);
+}
+.item-3{
+    width: 400px;
+    display: block;
+    position: relative;
+}
+.item-3::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    transition: all 1s;
+}
+.item-3 img {
+    max-width: 100%;
+}
+.item-3:hover::before {
+    opacity: 0;
+}
+.item-4 {
+    width: 400px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.item-4::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    transition: transform 1s;
+}
+.item-4 img {
+    max-width: 100%;
+}
+.item-4:hover::before {
+    transform: translate(100%, 0px);
+}
+.item-5 {
+    width: 400px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.item-5::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    transition: opacity 1s;
+    z-index: 2;
+}
+.item-5 img {
+    max-width: 100%;
+    transition: transform 1s;
+}
+.item-5:hover img {
+    transform: scale(1.1);
+}
+.item-5:hover::before {
+    opacity: 0;
+}
+
+.item-6 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 94, 255);
+    transition: width 0.8s ease 0s, height 0.5s ease-in 0.8s, background-color 0.8s ease 1.5s;
+}
+.item-6:hover {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(1, 28, 75);
+}
+.animation-direction {
+    margin: 0 auto;
+    max-width: 660px;
+}
+.animation-direction div {
+    display: inline-block;
+}
+.animation-direction div:not(:last-child) {
+    margin-right: 100px;
+}
+.item-7 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(251, 255, 0);
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-delay: 0.3s;
+}
+.item-7:hover {
+    animation-play-state: paused;
+}
+.item-8 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(251, 255, 0);
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-delay: 0.3s;
+}
+.item-8:hover {
+    animation-play-state: paused;
+}
+.item-9 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(251, 255, 0);
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-play-state: running;
+    animation-delay: 0.3s;
+}
+.item-9:hover {
+    animation-play-state: paused;
+}
+/* сценарій анімації */ 
+/* вказуємо довільну назву анімації */
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(40deg);
+        background-color: chartreuse;
+    }
+    100%{
+        transform: rotate(180deg);
+        background-color: rgb(0, 255, 98);
+    }
+}
+.item-10 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(133, 16, 187);
+    animation-name: translate;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-delay: 0.4s;
+    animation-fill-mode: none;
+    
+}
+.item-10:hover {
+    animation-play-state: paused;
+}
+@keyframes translate {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    50% {
+        border-radius: 50%;
+        background-color: rgb(219, 32, 157);
+    }
+    100%{
+        transform: translate(200px, 0px);
+    }
+}
+
+
+.footer__content {
+    padding: 100px 0;
+}
+.car {
+    margin-bottom: 150px;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(255, 0, 51);
+    border-radius: 60px 60px 0 0;
+    position: relative;
+    animation: car-ride 4s forwards;
+}
+.car__wheels {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    left: 0;
+}
+.car__wheel {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(240, 225, 225);
+    position: absolute;
+    border-radius: 50%;
+    outline: 4px dashed rgb(98, 0, 255);
+    animation: car-wheel 4s linear forwards;
+}
+.car__wheel:first-child {
+    left: 0;
+}
+.car__wheel:last-child {
+    right: 0;
+}
+@keyframes car-ride {
+    0%{
+        transform: translate(-100%, 0px);
+    }
+    30% {
+        transform: translate(0%, 0px) rotate(-10deg);
+    }
+    50% {
+        background-color: rgb(255, 196, 0);
+        transform: translate(0%, 0px);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(1600px, 0px);
+        opacity: 0.6;
+    }
+}
+@keyframes car-wheel {
+    0%{
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(30deg);
+        outline: 4px dashed rgb(0, 255, 38);
+    }
+    50% {
+        transform: rotate(200deg);
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
+.newton {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-top: 10px solid #000000;
+    position: relative;
+}
+.newton__item {
+    position: absolute;
+    top: -5px;
+    width: 33.333%;
+    height: 100%;
+    transform-origin: top;
+}
+.newton__item::before {
+    content: "";
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(203, 183, 203);
+    left: 50%;
+    transform: translate(-50%, 0px);
+    border-radius: 5px;
+}
+.newton__item::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.newton__item:nth-child(1) {
+    left: 0;
+    animation: left-item 1s infinite ease-in alternate;
+    transform: rotate(45deg);
+}
+.newton__item:nth-child(2) {
+    left: 33.333%;
+}
+.newton__item:nth-child(3) {
+    right: 0;
+    animation: right-item 1s infinite ease-out alternate;
+    transform: translate(0px, 0px);
+}
+@keyframes left-item {
+    0% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes right-item {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+}
