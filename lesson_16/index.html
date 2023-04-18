@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson_16</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Lesson 16 - PRACTICE</h1>
+        </header>
+        <main class="page">
+            <form action="#" method="get" enctype="multipart/form-data">
+                <div class="form-line">
+                    <input type="text" name="username" value="Username" required minlength="2">
+                </div>
+                <div class="form-line">
+                    <input required type="text" placeholder="+38(---)-- --" maxlength="15">
+                </div>
+                <div class="form-line">
+                    <input disabled required type="text" placeholder="+38(---)-- --" maxlength="15">
+                </div>
+                <div class="form-line">
+                    <label for="age-01">Вкажіть Ваш вік</label>
+                    <input id="age-01" type="text" name="age" placeholder="Age">
+                </div>
+                <div class="form-line">
+                    <label for="mail-01">Вкажіть Ваш e-mail</label>
+                    <input required id="mail-01" type="email" name="mail" placeholder="E-mail address">
+                </div>
+                <div class="form-line">
+                    <label for="phone-01">Вкажіть Ваш номер телефону</label>
+                    <input required id="phone-01" type="tel" name="phone" placeholder="+38(---)-- --">
+                </div>
+                <div class="form-line">
+                    <input type="password" name="password" placeholder="Введіть ваш пароль">
+                </div>
+                <div class="form-line">
+                    <input type="number" name="amount" placeholder="Введіть кількість">
+                </div>
+                <div class="form-line">
+                    <input class="color" type="color" name="color" value="#ddf789">
+                </div>
+                <div class="form-line">
+                    <input type="date" name="date">
+                </div>
+                <div class="form-line">
+                    <input type="range" name="range">
+                </div>
+                <div class="form-line">
+                    <label for="car-1">Є авто?</label>
+                    <input id="car-1" type="checkbox" name="car">
+                </div>
+                <div class="form-line">
+                    <label for="bike-1">Є велосипед?</label>
+                    <input id="bike-1" checked type="checkbox" name="bike">
+                </div>
+                <div class="form-line">
+                    <div class="form-title">Улюблений колір</div>
+                    <div class="form-radio">
+                        <label for="color-1">Чорний</label>
+                        <input id="color-1" type="radio" name="color">
+                    </div>
+                    <div class="form-radio">
+                        <label for="color-2">Білий</label>
+                        <input id="color-2" type="radio" name="color">
+                    </div>
+                </div>
+                <div class="form-line">
+                    <div class="form-title">Улюблений напій</div>
+                    <div class="form-radio">
+                        <label for="drink-1">Coca-Cola</label>
+                        <input id="drink-1" checked type="radio" name="drink">
+                    </div>
+                    <div class="form-radio">
+                        <label for="drink-2">Pepsi-Cola</label>
+                        <input id="drink-2" type="radio" name="drink">
+                    </div>
+                </div>
+                <div class="form-line">
+                    <input type="file" accept="image/png, image/jpg" name="file">
+                </div>
+                <div class="form-line">
+                    <input multiple type="file" name="file">
+                </div>
+                <div class="form-line">
+                    <textarea name="message" cols="30" rows="5" placeholder="Тут можна писати"></textarea>
+                </div>
+                <div class="form-line">
+                    <select name="list">
+                        <option value="1">Пункт 1</option>
+                        <option value="2">Пункт 2</option>
+                        <option selected value="3">Пункт 3</option>
+                        <option value="4">Пункт 4</option>
+                    </select>
+                </div>
+                <div class="form-line">
+                    <select multiple name="list">
+                        <option value="1">Пункт 1</option>
+                        <option value="2">Пункт 2</option>
+                        <option value="3">Пункт 3</option>
+                        <option value="4">Пункт 4</option>
+                    </select>
+                </div>
+                <div class="form-line">
+                    <p><button type="button">ПРОСТО КНОПКА</button></p>
+                    <p><button type="reset">КНОПКА, ЯКА ОБНУЛЯЄ ДАНІ ФОРМИ</button></p>
+                    <p><button type="submit">КНОПКА, ЯКА ВІДПРАВЛЯЄ ФОРМУ</button></p>
+                </div>  
+            </form>
+        </main>
+        <footer>
+            <a href="form-1.html">HOMEWORK</a>
+        </footer>
+    </div>
+</body>
+</html>

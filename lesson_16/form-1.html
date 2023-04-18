@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Inter:regular,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/form-1.css">
+    <title>Lesson_16</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>HOMEWORK</h1>
+        </header>
+        <main class="page">
+            <h2>Billing Details</h2>
+            <form class="form" action="#" method="post" enctype="multipart/form-data">
+                <div class="form-line">
+                    <input class="form-input" required type="text" name="first-name" placeholder="First name*" autocomplete="on">
+                </div>
+                <div class="form-line">
+                    <input class="form-input" required type="text" name="last-name" placeholder="Last name*" autocomplete="on">
+                </div>
+                <div class="form-line">
+                    <input class="form-input" required type="text" name="address" placeholder="Address*" autocomplete="on">
+                </div>
+                <div class="form-line">
+                    <input class="form-input" type="text" name="address" placeholder="Address line 2">
+                </div>
+                <div class="form-line">
+                    <select class="form__list" required name="list">
+                        <option selected value="">Country*</option>
+                        <option value="1">Poland</option>
+                        <option value="2">Spain</option>
+                        <option value="3">England</option>
+                        <option value="4">Ukraine</option>
+                        <option value="5">USA</option>
+                    </select>
+                </div>
+                <div class="form-line">
+                    <input class="form-input" required type="text" name="city" placeholder="City/Town*">
+                </div>
+                <div class="form-line">
+                    <input class="form-input" required type="number" name="postcode" placeholder="Postcode / ZIP*">
+                </div>
+                <div class="form-line">
+                    <input class="form-input" required type="tel" name="tel" placeholder="Phone*">
+                </div>
+                <div class="form-line">
+                    <input class="form-input" type="number" name="postcode" placeholder="Postcode / ZIP">
+                </div>
+                <div class="form-line">
+                    <input class="form-input" type="tel" name="tel" placeholder="Phone">
+                </div>
+                <div class="form-line">
+                    <textarea class="form-area" name="textarea" cols="30" rows="10" placeholder="Additional information"></textarea>
+                </div>
+            </form>
+            <form class="form-1" action="#" method="post" enctype="multipart/form-data">
+                <div class="form-1-line">
+                    <input checked type="checkbox" id="acc-1" name="account">
+                    <label for="acc-1">Create Account</label>
+                </div>
+                <div class="form-1-line">
+                    <input type="checkbox" id="ship" name="shipping">
+                    <label for="ship">Ship to a different address?</label>
+                </div>
+            </form>
+            <h3>Apply Coupon to get discount!</h3>
+            <form class="form-2" action="#" method="post" enctype="multipart/form-data">
+                <div class="form-2-line">
+                    <input type="tel" name="code" placeholder="Coupon code">
+                </div>
+                <div class="form-2-line">
+                    <button type="submit">Apply Code</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <a href="form-2.html">NEXT PAGE</a>
+        </footer>
+    </div>
+</body>
+</html>

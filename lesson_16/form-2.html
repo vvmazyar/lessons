@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:regular,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/form-2.css">
+    <title>Lesson_16</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>HOMEWORK</h1>
+        </header>
+        <main class="page">
+            <h2>Shipping Address</h2>
+            <form action="#" class="form" method="post" enctype="multipart/form-data">
+                <div class="form-line">
+                    <label class="form-label" for="mail-1">Email Address <span>*</span></label>
+                    <input class="form-input" id="mail-1" required type="email" name="mail" value="roni_cost@example.com" autocomplete="on">
+                </div>
+                <div class="form-line">
+                    <label class="form-label" for="pass-1">Password</label>
+                    <input class="form-input" id="pass-1" type="password" name="pass" placeholder="******************" autocomplete="on">
+                </div>
+                <div class="form-line">
+                    <label class="form-label" for="post-1">Zip/Postal Code</label>
+                    <input class="form-input" id="post-1" type="number" name="pass" autocomplete="on">
+                </div>
+            </form>
+            <h3>You already have an account with us. Sign in or continue as guest.</h3>
+            <form action="#" class="form-buttons" method="post" enctype="multipart/form-data">
+                <button class="button-1" type="button">login</button>
+                <button class="button-2" type="button">Forgot Your Password?</button>
+            </form>
+            <form action="#" class="form-1" method="post" enctype="multipart/form-data">
+                <div class="form-line">
+                    <label class="form-label" for="name-1">First Name <span>*</span></label>
+                    <input class="form-input" id="name-1" required type="text" name="name" autocomplete="on">
+                </div>
+                <div class="form-line">
+                    <label class="form-label" for="name-2">Last Name <span>*</span></label>
+                    <input class="form-input" id="name-2" required type="text" name="name" autocomplete="on">
+                </div>
+                <div class="form-line">
+                    <label class="form-label" for="company-1">Company</label>
+                    <input class="form-input" id="company-1" type="text" name="company" autocomplete="off">
+                </div>
+                <div class="form-line">
+                    <label class="form-label" for="address-1">Street Address <span>*</span></label>
+                    <div class="input">
+                        <input class="form-input" id="address-1" required type="text" name="address" autocomplete="off">
+                        <input class="form-input" id="address-2" type="text" name="address" autocomplete="off">
+                        <input class="form-input" id="address-3" type="text" name="address" autocomplete="off">
+                    </div>
+                </div>
+                <div class="form-line">
+                    <label class="form-label" for="country-1">Country <span>*</span></label>
+                    <input class="form-input" id="country-1" required type="text" name="country" autocomplete="off">
+                </div>
+                <div class="form-line">
+                    <label class="form-label" for="state">State/Province <span>*</span></label>
+                    <select class="form-select" required name="state" id="state">
+                        <option selected value="">Please select a region, state or province</option>
+                        <option value="">Idaho</option>
+                        <option value="">Alabama</option>
+                        <option value="">Iowa</option>
+                    </select>
+                </div>
+            </form>
+            <h2>Shipping Methods</h2>
+            <form action="#" class="form-2" method="post" enctype="multipart/form-data">
+                <div class="form-radio">
+                    <input checked type="radio" id="price-1" name="price">$5.00
+                    <div class="radio-label">
+                        <label for="price-1">Fixed</label>
+                        <label for="price-1">Flat Rate</label>
+                    </div>
+                </div>
+                <div class="form-radio">
+                    <input type="radio" id="price-2" name="price">$10.00
+                    <div class="radio-label-1">
+                        <label for="price-2">Table Rate</label>
+                        <label for="price-2">Best Way</label>
+                    </div>
+                </div>
+            </form>
+            <form action="#" class="form-buttons-1" method="post" enctype="multipart/form-data">
+                <button class="button-1" type="button">next</button>
+                <button class="button-3" type="button">Back</button>
+            </form>
+        </main>
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
